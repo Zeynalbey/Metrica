@@ -19,9 +19,8 @@
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="~/assets/images/favicon.ico">
-
-
-    <link href="assets/plugins/lightpicker/litepicker.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/lightpicker/litepicker.css" rel="stylesheet" type="text/css" />
+    @RenderSection("style",required:false);
     <!-- App css -->
     <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -100,25 +99,25 @@
 
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Analytics</a>
+                            <a asp-controller="Analytics" asp-action="Index" class="nav-link">Analytics</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="crypto-index.html">Crypto</a>
+                            <a asp-controller="Crypto" asp-action="Index" class="nav-link">Crypto</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="crm-index.html">CRM</a>
+                            <a asp-controller="CRM" asp-action="Index" class="nav-link">CRM</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="projects-index.html">Project</a>
+                            <a asp-controller="Project" asp-action="Index" class="nav-link">Project</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="ecommerce-index.html">Ecommerce</a>
+                            <a asp-controller="Ecommerce" asp-action="Index" class="nav-link">Ecommerce</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="helpdesk-index.html">Helpdesk</a>
+                            <a asp-controller="Helpdesk" asp-action="Index" class="nav-link">Helpdesk</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="hospital-index.html">Hospital</a>
+                            <a asp-controller="Hospital" asp-action="Index" class="nav-link">Hospital</a>
                         </li><!--end nav-item-->
                     </ul><!--end nav-->
                 </div><!-- end Dashboards -->
@@ -453,16 +452,16 @@
                             </li><!--end nav-item-->
 
                             <li class="nav-item">
-                                <a class="nav-link" href="apps-chat.html">Chat</a>
+                                <a asp-controller="Chat" asp-action="Index" class="nav-link">Chat</a>
                             </li><!--end nav-item-->
                             <li class="nav-item">
-                                <a class="nav-link" href="apps-contact-list.html">Contact List</a>
+                                <a asp-controller="ContactList" asp-action="Index" class="nav-link">Contact List</a>
                             </li><!--end nav-item-->
                             <li class="nav-item">
-                                <a class="nav-link" href="apps-calendar.html">Calendar</a>
+                                <a asp-controller="Calendar" asp-action="Index" class="nav-link">Calendar</a>
                             </li><!--end nav-item-->
                             <li class="nav-item">
-                                <a class="nav-link" href="apps-invoice.html">Invoice</a>
+                                <a asp-controller="Invoice" asp-action="Index" class="nav-link">Invoice</a>
                             </li><!--end nav-item-->
                         </ul><!--end navbar-nav--->
                     </div><!--end sidebarCollapse-->
@@ -735,31 +734,31 @@
                     </div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-profile.html">Profile</a>
+                            <a asp-controller="Profile" asp-action="Index" class="nav-link" >Profile</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-tour.html">Tour</a>
+                            <a asp-controller="Tour" asp-action="Index" class="nav-link">Tour</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-timeline.html">Timeline</a>
+                            <a asp-controller="Timeline" asp-action="Index" class="nav-link">Timeline</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-treeview.html">Treeview</a>
+                            <a asp-controller="Treeview" asp-action="Index" class="nav-link">Treeview</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-starter.html">Starter Page</a>
+                            <a asp-controller="StarterPage" asp-action="Index" class="nav-link">Starter Page</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-pricing.html">Pricing</a>
+                            <a asp-controller="Pricing" asp-action="Index" class="nav-link">Pricing</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-blogs.html">Blogs</a>
+                            <a asp-controller="Blogs" asp-action="Index" class="nav-link">Blogs</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-faq.html">FAQs</a>
+                            <a asp-controller="Fags" asp-action="Index" class="nav-link">FAQs</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages-gallery.html">Gallery</a>
+                            <a asp-controller="Gallery" asp-action="Index" class="nav-link">Gallery</a>
                         </li><!--end nav-item-->
                     </ul><!--end nav-->
                 </div><!-- end Pages -->
@@ -771,40 +770,40 @@
                     </div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-login.html">Log in</a>
+                            <a asp-controller="Authentication" asp-action="login" class="nav-link">Log in</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-login-alt.html">Log in alt</a>
+                            <a asp-controller="Authentication" asp-action="login" class="nav-link">Log in alt</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-register.html">Register</a>
+                            <a asp-controller="Authentication" asp-action="Register" class="nav-link">Register</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-register-alt.html">Register-alt</a>
+                            <a asp-controller="Authentication" asp-action="Register" class="nav-link">Register-alt</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-recover-pw.html">Re-Password</a>
+                            <a asp-controller="Authentication" asp-action="RePassword" class="nav-link">Re-Password</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-recover-pw-alt.html">Re-Password-alt</a>
+                            <a asp-controller="Authentication" asp-action="RePassword" class="nav-link">Re-Password-alt</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-lock-screen.html">Lock Screen</a>
+                            <a asp-controller="Authentication" asp-action="LockScreen" class="nav-link">Lock Screen</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-lock-screen-alt.html">Lock Screen-alt</a>
+                            <a asp-controller="Authentication" asp-action="LockScreen" class="nav-link">Lock Screen-alt</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-404.html">Error 404</a>
+                            <a asp-controller="Authentication" asp-action="Error404" class="nav-link">Error 404</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-404-alt.html">Error 404-alt</a>
+                            <a asp-controller="Authentication" asp-action="Error404" class="nav-link">Error 404-alt</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-500.html">Error 500</a>
+                            <a asp-controller="Authentication" asp-action="Error500" class="nav-link">Error 500</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="auth-500-alt.html">Error 500-alt</a>
+                            <a asp-controller="Authentication" asp-action="Error500" class="nav-link">Error 500-alt</a>
                         </li><!--end nav-item-->
                     </ul><!--end nav-->
                 </div><!-- end Authentication-->
@@ -1069,17 +1068,7 @@
     </div>
     <!-- end page-wrapper -->
     <!-- Javascript  -->
-    <script src="~/assets/plugins/clipboard/clipboard.min.js"></script>
-    <script src="~/assets/pages/clipboard.init.js"></script>
-    <script src="~/assets/plugins/lightpicker/litepicker.js"></script>
-    <script src="~/assets/plugins/apexcharts/apexcharts.min.js"></script>
-    <script src="~/assets/pages/analytics-index.init.js"></script>
-    <script src="~/assets/pages/hospital-index.init.js"></script>
-    <script src="~/assets/pages/helpdesk-index.init.js"></script>
-    <script src="~/assets/pages/crypto-index.init.js"></script>
-    <script src="~/assets/pages/ecommerce-index.init.js"></script>
-    <script src="~/assets/pages/crm-index.init.js"></script>
-
+    @RenderSection("Js",required:false);
     <!-- App js -->
     <script src="~/assets/js/app.js"></script>
 
