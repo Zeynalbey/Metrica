@@ -1,12 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿//using Microsoft.AspNetCore.Mvc;
 
-namespace AdminPanel.Apps.Controllers
-{
-    public class ContactListController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
-}
+//namespace AdminPanel.Apps.Controllers
+//{
+//    public class ContactListController : Controller
+//    {
+//        public IActionResult Index()
+//        {
+//            return View();
+//        }
+//    }
+//}

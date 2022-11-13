@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="~/assets/images/favicon.ico">
 
 
-
+    <link href="assets/plugins/lightpicker/litepicker.css" rel="stylesheet" type="text/css" />
     <!-- App css -->
     <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -962,9 +962,127 @@
                                         <i class="ti ti-diamond"></i>
                                     </div>
                                     <div class="media-body align-self-center ms-2 text-truncate">
+                                        <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                        <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                    </div><!--end media-body-->
+                                </div><!--end media-->
+                            </a><!--end-item-->
+                            <!-- item-->
+                            <a href="#" class="dropdown-item py-3">
+                                <small class="float-end text-muted ps-2">1 hr ago</small>
+                                <div class="media">
+                                    <div class="avatar-md bg-soft-primary">
+                                        <i class="ti ti-drone"></i>
+                                    </div>
+                                    <div class="media-body align-self-center ms-2 text-truncate">
+                                        <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                        <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                    </div><!--end media-body-->
+                                </div><!--end media-->
+                            </a><!--end-item-->
+                            <!-- item-->
+                            <a href="#" class="dropdown-item py-3">
+                                <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                <div class="media">
+                                    <div class="avatar-md bg-soft-primary">
+                                        <i class="ti ti-users"></i>
+                                    </div>
+                                    <div class="media-body align-self-center ms-2 text-truncate">
+                                        <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                        <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                    </div><!--end media-body-->
+                                </div><!--end media-->
+                            </a><!--end-item-->
+                        </div>
+                        <!-- All-->
+                        <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                            View all <i class="fi-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
 
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="false" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                            <img src="~/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+                            <div>
+                                <small class="d-none d-md-block font-11">Admin</small>
+                                <span class="d-none d-md-block fw-semibold font-12">
+                                    Maria Gibson <i class="mdi mdi-chevron-down"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#"><i class="ti ti-user font-16 me-1 align-text-bottom"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="ti ti-settings font-16 me-1 align-text-bottom"></i> Settings</a>
+                        <div class="dropdown-divider mb-0"></div>
+                        <a class="dropdown-item" href="#"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
+                    </div>
+                </li><!--end topbar-profile-->
+                <li class="notification-list">
+                    <a class="nav-link arrow-none nav-icon offcanvas-btn" href="#" data-bs-toggle="offcanvas" data-bs-target="#Appearance" role="button" aria-controls="Rightbar">
+                        <i class="ti ti-settings ti-spin"></i>
+                    </a>
+                </li>
+            </ul><!--end topbar-nav-->
 
+            <ul class="list-unstyled topbar-nav mb-0">
+                <li>
+                    <button class="nav-link button-menu-mobile nav-icon" id="togglemenu">
+                        <i class="ti ti-menu-2"></i>
+                    </button>
+                </li>
+                <li class="hide-phone app-search">
+                    <form role="search" action="#" method="get">
+                        <input type="search" name="search" class="form-control top-search mb-0" placeholder="Type text...">
+                        <button type="submit"><i class="ti ti-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <!-- end navbar-->
+    </div>
+    <!-- Top Bar End -->
+    <!-- Top Bar End -->
 
+    <div class="page-wrapper">
 
+        <!-- Page Content-->
+        <div class="page-content-tab">
 
+            @RenderBody():
+            <!--Start Footer-->
+            <!-- Footer Start -->
+            <footer class="footer text-center text-sm-start">
+                &copy; <script>
+                           document.write(new Date().getFullYear())
+                </script> Metrica <span class="text-muted d-none d-sm-inline-block float-end">
+                    Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes
+                </span>
+            </footer>
+            <!-- end Footer -->
+            <!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+    <!-- Javascript  -->
+    <script src="~/assets/plugins/clipboard/clipboard.min.js"></script>
+    <script src="~/assets/pages/clipboard.init.js"></script>
+    <script src="~/assets/plugins/lightpicker/litepicker.js"></script>
+    <script src="~/assets/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="~/assets/pages/analytics-index.init.js"></script>
+    <script src="~/assets/pages/hospital-index.init.js"></script>
+    <script src="~/assets/pages/helpdesk-index.init.js"></script>
+    <script src="~/assets/pages/crypto-index.init.js"></script>
+    <script src="~/assets/pages/ecommerce-index.init.js"></script>
+    <script src="~/assets/pages/crm-index.init.js"></script>
 
+    <!-- App js -->
+    <script src="~/assets/js/app.js"></script>
+
+</body>
+
+</html>
